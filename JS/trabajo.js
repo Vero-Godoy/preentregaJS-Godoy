@@ -53,7 +53,7 @@ function mostrarProductos() {
         div.className = 'producto';
         div.innerHTML = `
             <img src="${producto.imagen}" alt="${producto.nombre}" width="100">
-            <p>${producto.nombre} - $${producto.precio}</p>
+            <h4>${producto.nombre} - $${producto.precio}</h4>
             <button id="btn-comprar-${index}" class="comprar btn">Comprar</button>
         `;
         contenedor.appendChild(div);
@@ -83,6 +83,3 @@ function agregarAlCarrito(precio) {
     totalCompra += precio;
     actualizarTotal();  
 }
-
-
-
