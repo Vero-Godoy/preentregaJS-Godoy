@@ -6,72 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./CSS/styles.css">
     <title>Inicio - Tienda de Lámparas</title>
 
 </head>
 
-<header>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="/otros/logo_transparente_negro.png" alt="Logo" width="100" height="100"
-                    class="d-inline-block align-text-top">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Productos</a>
-                        <a class="nav-link" href="#">Nosotros</a>
-                        <a class="nav-link" href="#">Contacto</a>
-                    </div>
-                </div>
-        </div>
-    </nav>
-</header>
-
 <body class="container">
-</div>
-<h1 id="titulo">Estás ingresando a nuestra tienda de lámparas y veladores.</h1>
+    <header>
 
-Formulario para pedir el nombre del usuario
-<form id="formulario">
-    <label for="nombre">Ingresa tu nombre:</label>
-    <input type="text" id="nombre" placeholder="Escribe tu nombre">
-    <input type="submit" value="Ingresar">
-</form>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./otros/logo_transparente_negro.png" alt="Logo" width="100" height="100"
+                        class="d-inline-block align-text-top">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">Productos</a>
+                            <a class="nav-link" href="#">Nosotros</a>
+                            <a class="nav-link" href="#">Contacto</a>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
 
-<!-- Sección de productos -->
-<div id="productos"></div>
-
-<!-- Total acumulado -->
-<div id="total" class="total-final"></div>
+    <main>
 
 
-<footer class="text-center bg-body-tertiary">
-    <!-- Grid container -->
-    <div class="container pt-4">
-      
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2024 Copyright:
-      <a class="text-body" href="https://www.coderhouse.com/ar/online/javascript">JavaScrip</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-    <script src="/JS/trabajo.js"></script>
+        </div>
+        <h1 id="titulo">Estás ingresando a nuestra tienda de lámparas y veladores.</h1>
+
+        <!-- Formulario para pedir el nombre del usuario -->
+        <form id="formulario">
+            <label for="nombre">Ingresa tu nombre:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+            <input type="submit" value="Ingresar">
+        </form>
+
+        <!-- Sección de productos -->
+        <div id="productos"></div>
+
+        <!-- Total acumulado -->
+        <div id="total" class="total-final"></div>
+
+    </main>
+
+    <aside>
+        <!-- Sección de comentarios de usuarios -->
+        <div id="comentarios">
+
+        </div>
+
+    </aside>
+    <footer class="text-center bg-body-tertiary">
+        <!-- Grid container -->
+        <div class="container pt-4">
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2024 Copyright:
+                <a class="text-body" href="https://www.coderhouse.com/ar/online/javascript">JavaScrip</a>
+            </div>
+            <!-- Copyright -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="./JS/trabajo.js"></script>
 </body>
 
-
-
 </html>
-

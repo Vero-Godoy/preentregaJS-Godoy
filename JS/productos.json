@@ -1,0 +1,6 @@
+[
+    {"id": 1, "nombre": "Velador cuadrado", "precio": 35000, "imagen": "/otros/veladorCuadrado.jpg"},
+    {"id": 2, "nombre": "Lámpara 'Mandala'", "precio": 45000, "imagen": "/otros/lamparaMandala.jpg"},
+    {"id": 3, "nombre": "Velador triángulo", "precio": 50000, "imagen": "/otros/veladorTriangular.jpg"}
+]
+

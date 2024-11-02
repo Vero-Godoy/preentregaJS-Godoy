@@ -1,88 +1,145 @@
-body{
-    background-color: whitesmoke;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* Estilo para los botones de la tienda */
+.btn {
+    background-color: #555;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 }
-h1{
-    font-style: italic;
+
+.btn:hover {
+    background-color: #333;
+    color: #f9f9f9;
 }
-.producto{
-    padding: 10px;
-    margin: 10px;
+
+/* Estilo específico para los botones en el carrito */
+.btn-success, .btn-danger {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Ajustes en la visualización del carrito */
+.caja-total {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
-    max-width: 950px;
-    width: 90%;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 1rem;
-    border: transparent;
-}
-.texto-bienvenida{
-    color:antiquewhite;
-    background-color: grey;
-    font-style: italic;
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-}
-.caja-total {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-color: #ffffff;
-    border-color: grey;
-    border-image: none;
-    border-style: solid solid;
-    border-width: 3px;
-    color: inherit;
-    margin: 20px;
-    padding: 14px 15px 7px;
-    min-height: 48px;
-  }
-.total-final {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: right;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     margin-top: 20px;
-    color: black;
-
-    display: flex;
-    justify-content: right;
-    align-items: center;
 }
 
+.total-final {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Diseño del contenedor de productos */
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.producto {
+    padding: 15px;
+    margin: 10px;
+    width: calc(33% - 40px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.producto h4 {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Formulario de compra */
 #formulario {
     margin-bottom: 20px;
+    text-align: center;
 }
+
 input[type="text"] {
-    padding: 5px;
+    padding: 8px;
     margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 20px);
+    max-width: 300px;
 }
+
 input[type="submit"] {
-    padding: 5px 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
 }
-.btn{
-    background-color:gray;
-    border-color: black;
-    color:black;
-    width: 40%;
-    font-size: 0.7rem;
-    margin-top: 4vh;
-    padding: 1vh;
-    border-radius: 0;
+
+input[type="submit"]:hover {
+    background-color: #555;
 }
-.btn:hover{
-    color:whitesmoke;
-    font-size: 1em;
-    background-color: black;
-    font-size: 1rem;
-    transition: 2s;
+/* Estilo para la sección de comentarios */
+.comentarios {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-img {
-    margin-right: 10px;
-    border-radius: 10px;
-    border: 1px solid grey;
+
+.comentario {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comentario h5 {
+    font-weight: bold;
+    color: #333;
+}
+
+.comentario p {
+    color: #555;
+    margin-top: 5px;
 }
 
